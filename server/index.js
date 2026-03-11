@@ -1,16 +1,34 @@
 const agent = require('express');
+const mongoose = require('mongoose');
+
+const authRoutes = require('./routes/authRoutes');
+const productsRoutes = require('./routes/productsRoutes');
+const contactRoutes = require('./routes/contactRoutes');
+const ordersRoutes = require('./routes/ordersRoutes');
+
 const server = agent();
 
-server.use((require('cors'))());
-server.use(agent.json());
-
-const data = require('./product.json');
-const users = require('./users.json');
-
-const fileSystem = require('fs/promises');
+try {
+	
+	await mongoose.connect('mongodb+srv://loayabdelkader_db_user:zayxmMnLG0MSrFx4@study.dyfjbst.mongodb.net/todo?appName=study');
+	await mongoose.connection.db.admin().command({ ping: 1 });
+	
+	server.use((require('cors'))());
+	server.use(agent.json());
+	
+	server.use(authRoutes);
+	server.use(productsRoutes);
+	server.use(contactRoutes);
+	server.use(ordersRoutes);
+	
+	server.listen(3000);
+	
+}catch(err) {
+	console.error("Connection Error",err);
+}
 
 //Check User
-server.post('/login',(req,res) => {
+/*server.post('/login',(req,res) => {
 	if( req.body.username == undefined || req.body.password == undefined )
 		req.sendStatus(400);
 
@@ -106,4 +124,4 @@ server.get('/:productId',(req,res) => {
 
 server.listen(8000,() => {
   console.log('Server running on http://localhost:8000');
-});
+});*/
