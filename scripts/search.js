@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    fetch(`http://localhost:8000/search/${encodeURIComponent(value)}`)
+    fetch(`https://iti-group-project-server.vercel.app/search/${encodeURIComponent(value)}`)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.json();

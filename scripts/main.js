@@ -71,7 +71,7 @@ document.body.addEventListener('click',event => {
 
 //Get Data
 const cartAjaxAgent = new XMLHttpRequest();
-cartAjaxAgent.open("GET","http://localhost:8000");
+cartAjaxAgent.open("GET","https://iti-group-project-server.vercel.app");
 cartAjaxAgent.send();
 
 const cartCounter = document.getElementById('open-cart-panel');
@@ -317,7 +317,7 @@ function insertProducts(data,container,maximum) {
 function getSingleProduct(id,cb) {
 	const agent = new XMLHttpRequest();
 
-	agent.open('GET','http://localhost:8000/'+ id);
+	agent.open('GET','https://iti-group-project-server.vercel.app/'+ id);
 	agent.send();
 
 	agent.addEventListener('readystatechange',() => {
@@ -330,7 +330,7 @@ function getSingleProduct(id,cb) {
 function getCategoryProducts(category,callback,section) {
 	let agent = new XMLHttpRequest();
 
-	agent.open('GET','http://localhost:8000?category='+ category);
+	agent.open('GET','https://iti-group-project-server.vercel.app?category='+ category);
 	agent.send();
 
 	agent.addEventListener('readystatechange',() => {
@@ -341,7 +341,7 @@ function getCategoryProducts(category,callback,section) {
 
 function getAllProducts(callback,section) {
 	let agent = new XMLHttpRequest();
-	agent.open("GET","http://localhost:8000");
+	agent.open("GET","https://iti-group-project-server.vercel.app");
 	agent.send();
 
 	//Start Loading

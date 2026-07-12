@@ -53,7 +53,7 @@ const urlParams = new URLSearchParams(window.location.search);
   }
 
   // build url 
-  let fetchUrl = 'http://localhost:8000';
+  let fetchUrl = 'https://iti-group-project-server.vercel.app';
   if (category) {
     fetchUrl += '?category=' + encodeURIComponent(category);
   }
