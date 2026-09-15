@@ -30,6 +30,7 @@ document.getElementById('close-cart-panel').addEventListener('click',closeCart);
 cartPanel.getElementsByClassName('layout')[0].addEventListener('click',closeCart);
 
 //Dynamic Cart
+const getProductUrl = id => (window.location.pathname.includes('/pages/') ? '' : 'pages/') + 'single-product.html?id=' + id;
 const updateCartCounter = () => cartCounter.dataset['count'] = Object.keys(getCart()).length;
 
 function getCart() {
@@ -131,7 +132,7 @@ function insertProductIntoCart(data,currentCart = undefined) {
 		const title = document.createElement('a');
 		title.innerText = data.name;
 		title.className = 'cart-product-name';
-		title.href = 'pages/single-product.html?id='+ data.id;
+		title.href = getProductUrl(data.id);
 		
 		const price = document.createElement('span');
 		price.innerText = "$"+ data.price;
@@ -265,7 +266,7 @@ function fillSlider(data,section) {
 
 	for(let product of data) {
 
-		container.innerHTML += `<a class="text-decoration-none product-card h-100" href = 'pages/single-product.html?id=${product.id}'>
+		container.innerHTML += `<a class="text-decoration-none product-card h-100" href = '${getProductUrl(product.id)}'>
               <img
                 src="${product.image}"
                 class="product-img"
@@ -293,7 +294,7 @@ function insertProducts(data,container,maximum) {
 		maximum--;
 		if( maximum < 0 ) break;
 
-		container.innerHTML += `<a class="col-12 col-md-${12 / total} text-decoration-none h-100" href = 'pages/single-product.html?id=${product.id}'>
+		container.innerHTML += `<a class="col-12 col-md-${12 / total} text-decoration-none h-100" href = '${getProductUrl(product.id)}'>
             <div class="product-card h-100">  
 				<img
 					src="${product.image}"
