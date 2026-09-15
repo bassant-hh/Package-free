@@ -9,7 +9,14 @@
       "category": "Laundry",
       "eco": true,
       "description": "Plant-based, plastic-free baby laundry detergent.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
       "image": "https://images.unsplash.com/photo-1633878353628-5fc8b983325c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881238-455635946",
+        "https://www.istockphoto.com/photo/close-up-decoration-kitchen-rustic-style-gm682162934-125052709"
+      ],
       "hover_image_url": "https://media.istockphoto.com/id/1199861184/photo/reusable-shopping-grocery-bags-wooden-cutlery-set-eggs-box-hair-comb-natural-bamboo.jpg?s=612x612&w=is&k=20&c=D9N_slw_y0t79MyD9TSDTMTzIAtVB-dbQJ-DorMbsTM="
     },
     {
@@ -21,6 +28,13 @@
       "category": "Laundry",
       "eco": true,
       "description": "Zero waste laundry detergent in reusable glass jar.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/1332226941/photo/handmade-natural-bar-soaps-ethical-sustainable-zero-waste-lifestyle.jpg?s=1024x1024&w=is&k=20&c=MFOsTR0QeHhksPe4Ay_LccS1jywlME7mn2L4GYgreF4=",
       "hover_image_url": "https://media.istockphoto.com/id/1153489700/photo/eco-natural-soap-and-solid-shampoo-bars-zero-waste-concept-plastic-free-flat-lay-top-view.jpg?s=612x612&w=is&k=20&c=Wfes-hDHeGCjPSYXZUE-wnaRRi-gC9-UUdmwi0FyQQs="
     },
@@ -33,6 +47,14 @@
       "category": "Laundry",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+     
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/1475395472/photo/glass-dropper-bottle-with-white-liquid-essence-serum-or-cream-on-stand-from-natural-stone.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ca5sqoTXV_0uwd3NeTEaAIJWNgM0b2FgOeL3u-vYqsU=",
       "hover_image_url": "https://media.istockphoto.com/id/1329822689/photo/essential-oils-in-glass-bottles-white-marble-background-eco-cosmetics-beauty-products-skin.jpg?s=612x612&w=is&k=20&c=iiY95RhmsiMykrxBH-pMBaEMiAOFM8lFN6qQ7rSHi0U="
     },
@@ -45,6 +67,14 @@
       "category": "Laundry",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
+      
       "image": "https://media.istockphoto.com/id/1945854987/photo/natural-cosmetic-products-skin-care-concept.jpg?s=1024x1024&w=is&k=20&c=4iax5AjUxpI7v2dYuxTqlakrl0R6UiimnA8bIXGvFXQ=",
       "hover_image_url": "https://media.istockphoto.com/id/1633766006/photo/natural-cosmetic-products-with-green-leaves.jpg?s=1024x1024&w=is&k=20&c=A4xJDJmtoHGSLYtsomhq6yuicC_rQa-xS8kfjyuNLcw="
     },
@@ -57,6 +87,13 @@
       "category": "Laundry",
       "eco": true,
       "description": "Plant-based, plastic-free baby laundry detergent.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1633878353628-5fc8b983325c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://media.istockphoto.com/id/1199861184/photo/reusable-shopping-grocery-bags-wooden-cutlery-set-eggs-box-hair-comb-natural-bamboo.jpg?s=612x612&w=is&k=20&c=D9N_slw_y0t79MyD9TSDTMTzIAtVB-dbQJ-DorMbsTM="
     },
@@ -69,18 +106,16 @@
       "category": "Laundry",
       "eco": true,
       "description": "Zero waste laundry detergent in reusable glass jar.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://plus.unsplash.com/premium_photo-1723863628159-dcec7cf67efc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://plus.unsplash.com/premium_photo-1676587710768-3c36f6aa9fdd?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-
-    
-    
-    
-    
-    
-    
-    
-    
     {
       "id": 4,
       "name": "Swedish Eco Dishcloth - Classic",
@@ -90,6 +125,13 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1559837957-bab8edc53c85?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://images.unsplash.com/photo-1764539572367-6095eb4f5c98?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -102,6 +144,13 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://plus.unsplash.com/premium_photo-1661573161359-5039424a8c17?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -114,6 +163,13 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/1272443198/photo/a-reusable-bag-full-of-colourful-and-fresh-organic-vegetables-and-groceries-on-the-kitchen.jpg?s=612x612&w=is&k=20&c=1MrAhfWiyBY4N1g0gnVr-3JgNKiBa6LmNdv1F55Hojs=",
       "hover_image_url": "https://media.istockphoto.com/id/1225253924/photo/food-waste-in-iron-bowl-and-female-hands.jpg?s=1024x1024&w=is&k=20&c=zig9NIuNdVcEeRBYNSQDFQysWSczfVRUUSKTle-VXto="
     },
@@ -126,6 +182,13 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+      "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.pexels.com/photos/9859327/pexels-photo-9859327.jpeg",
       "hover_image_url": "https://images.pexels.com/photos/4857199/pexels-photo-4857199.jpeg"
     },
@@ -138,6 +201,13 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://plus.unsplash.com/premium_photo-1664283229697-262efd828600?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://plus.unsplash.com/premium_photo-1664283229333-ed132ad0c83c?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -150,18 +220,16 @@
       "category": "Kitchen",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://plus.unsplash.com/premium_photo-1663853293775-f02006e0dc9c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://plus.unsplash.com/premium_photo-1663853293851-b1c5504d102e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-
-   
-   
-   
-   
-   
-   
-   
-   
     {
       "id": 23,
       "name": "Eco Bathroom Pad - Classic",
@@ -171,6 +239,13 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/2172317345/photo/spa-and-beauty-care-products-advertisement-template.jpg?s=1024x1024&w=is&k=20&c=2z4xSBIkDJGAJZavicWbvKW_WDIqLk8Xec6j4HZ-HYE=",
       "hover_image_url": "https://media.istockphoto.com/id/1866169632/photo/front-view-of-an-unlabeled-shower-gel-bottle-placed-on-a-pastel-colored-table-with-a-white.jpg?s=612x612&w=is&k=20&c=Vyt3dNLzFn-ugv4LEN7yM2INNI0ni4TG3KlV8c5x8jo="
     },
@@ -183,6 +258,13 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://media.istockphoto.com/id/1402881317/photo/cups-and-kitchen-utensils-in-the-cupboard.jpg?s=2048x2048&w=is&k=20&c=-T_XtfuZr1jO1Nr0vKblIlwX1Qi9uqkwXoPP7xK_xLw=",
+        "https://media.istockphoto.com/id/1326290793/photo/beans-in-glass-containers-in-the-kitchen.jpg?s=2048x2048&w=is&k=20&c=PUO4IkFgaVdIShCHpPFFv0rZKrf7Rz_RncQMRj649gY="
+      ],
       "image": "https://media.istockphoto.com/id/1273123951/photo/natural-eco-friendly-cosmetics.jpg?s=1024x1024&w=is&k=20&c=mIFi5fa0tjy1hyT1IqYu_c-51S8nB6WywlewrJC6cGM=",
       "hover_image_url": "https://media.istockphoto.com/id/1273145157/photo/natural-eco-friendly-cosmetics.jpg?s=612x612&w=is&k=20&c=sHlVtxzkCVbYkbY0iSSVDE1XHmxVBIxwC3LaIj9Uu40="
     },
@@ -195,6 +277,13 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/969519714/photo/spice-massage-axes.jpg?s=1024x1024&w=is&k=20&c=WfEAXTV8_vAmcWImByeg1DfiacuqRiRAFDel1QowUtA=",
       "hover_image_url": "https://media.istockphoto.com/id/969574924/photo/spice-massage-axes.jpg?s=1024x1024&w=is&k=20&c=r2yYZ1DWhDdQumjQSQHrW19hoWhTM3VAl4pKFaKl3Qg="
     },
@@ -207,6 +296,13 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+   "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1571134439338-f587d3ba6f99?q=80&w=2108&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://images.unsplash.com/photo-1567549030252-123a2e012579?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -219,6 +315,13 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/1945854987/photo/natural-cosmetic-products-skin-care-concept.jpg?s=1024x1024&w=is&k=20&c=4iax5AjUxpI7v2dYuxTqlakrl0R6UiimnA8bIXGvFXQ=",
       "hover_image_url": "https://media.istockphoto.com/id/1633766006/photo/natural-cosmetic-products-with-green-leaves.jpg?s=1024x1024&w=is&k=20&c=A4xJDJmtoHGSLYtsomhq6yuicC_rQa-xS8kfjyuNLcw="
     },
@@ -231,17 +334,16 @@
       "category": "Bathroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://media.istockphoto.com/id/1307758785/photo/eco-friendly-bamboo-toothbrushes-in-glass-zero-waste-copy-space.jpg?s=1024x1024&w=is&k=20&c=kjJ2bH2qJBcQC_lwYgfJEgFyM5fzjnDdiSxiipn-12M="
     },
-
-   
-   
-   
-   
-   
-   
-   
     {
       "id": 29,
       "name": "Eco Bedroom Sachet - Lavender",
@@ -251,6 +353,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/1406189828/photo/home-interior-with-green-lawn.jpg?s=1024x1024&w=is&k=20&c=KGHQvPz6jvgKxW6Bzj0TvtlkNbYj-83niE3uI8qhvWY=",
       "hover_image_url": "https://media.istockphoto.com/id/1406189911/photo/living-room-with-grass.jpg?s=1024x1024&w=is&k=20&c=dt_YyDGWL24fxrtTBeyFUFbMCCleFrfVMygFZpwtMRg="
     },
@@ -263,6 +372,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+   "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1738968673396-e363fa65e3b9?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://media.istockphoto.com/id/1441193046/photo/cozy-bedroom-interior-with-a-healthy-breakfast.jpg?s=612x612&w=is&k=20&c=uqpX0bv9ow_YITVybHBJKq7HvlbeSxWRcqxWfI3_js8="
     },
@@ -275,6 +391,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1626965654957-fef1cb80d4b7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://images.unsplash.com/photo-1649445006098-e1ab371a4aca?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -287,6 +410,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/952349980/photo/bottles-with-herbs-used-in-non-traditional-medicine.jpg?s=1024x1024&w=is&k=20&c=Czj4mZ5BW1K7BM6rOr4GYrtdtvey5EP7mwV-3PkIoqY=",
       "hover_image_url": "https://media.istockphoto.com/id/484341643/photo/transparency-bottle.jpg?s=1024x1024&w=is&k=20&c=xgOvUttkLIqYqXLeO9_Z3-_cPie0s1YAo2DlBJhqbqg="
     },
@@ -299,6 +429,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+       "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+     "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://images.unsplash.com/photo-1742490467792-88d10ded88c5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "hover_image_url": "https://images.unsplash.com/photo-1721394745118-0fa548954c5d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -311,6 +448,13 @@
       "category": "Bedroom",
       "eco": true,
       "description": "Compostable reusable dishcloth.",
+      "usage": "Use one cap per wash load for best results.",
+      "ingredients": "100% natural plant-based ingredients",
+    "additional_images": [
+        "https://images.unsplash.com/photo-1750268746237-36b1b3fba56f?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://www.istockphoto.com/photo/cups-and-kitchen-utensils-in-the-cupboard-gm1402881317-455635949?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A96f32b57-cf68-43b9-a8e3-9b7494400f77",
+        "https://www.istockphoto.com/photo/interior-decoration-gm484427702-71174187?utm_source=unsplash&utm_medium=affiliate&utm_campaign=adp_photos_sponsored&utm_content=https%3A%2F%2Funsplash.com%2F%3Fasset%3D%255B%2522Photos%2522%252C%257B%2522slug%2522%253A%2522shelves-showcase-vases-and-decorative-items-6wdr_tGBCv4%2522%257D%255D&utm_term=texture%3A%3Aaffiliate-signature-content%3Acontrol%3A124e6458-10e1-4eae-921f-c713c95a079c"
+      ],
       "image": "https://media.istockphoto.com/id/653892270/photo/grey-bedroom-with-bed.jpg?s=1024x1024&w=is&k=20&c=kXmYKhVsyjh8xfbtDToLZKbxusfvlhY6iCsab8dyMd0=",
       "hover_image_url": "https://media.istockphoto.com/id/653892254/photo/new-bedroom-with-chalkboard.jpg?s=1024x1024&w=is&k=20&c=TfzaAiaX8nOLF2UnCnBQw3kfxGSiP3HcyGuAqvQnJnk="
     }

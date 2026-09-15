@@ -6,6 +6,11 @@ function Product(data) {
     this.currency = data.currency || "USD";
     this.category = data.category;
     this.image = data.image;
+    this.usage = data.usage;
+    this.ingredients = data.ingredients;
+    this.additional_images = data.additional_images;
+
+
     this.hoverImage = data.hover_image_url || data.image;
     this.description = data.description || "";
 
