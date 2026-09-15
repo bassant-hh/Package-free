@@ -50,7 +50,10 @@
         // Function to update cart badge
         function updateCartBadge() {
             const totalItems = products.reduce((sum, product) => sum + product.quantity, 0);
-            document.getElementById('cartBadge').textContent = totalItems;
+            const badge = document.getElementById('cartBadge');
+            if (badge) {
+                badge.textContent = totalItems;
+            }
         }
 
         // Function to add product
