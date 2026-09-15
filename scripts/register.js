@@ -48,3 +48,11 @@ async function register() {
     alert("❌ Cannot connect to server");
   }
 }
+
+const registerForm = document.querySelector('.login-card form');
+if (registerForm) {
+  registerForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    register();
+  });
+}

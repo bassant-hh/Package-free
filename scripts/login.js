@@ -37,3 +37,11 @@ async function login() {
     alert("❌ Cannot connect to server");
   }
 }
+
+const loginForm = document.querySelector('.login-card form');
+if (loginForm) {
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    login();
+  });
+}
