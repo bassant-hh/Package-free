@@ -1,5 +1,6 @@
 const agent = require('express');
 const server = agent();
+const path = require('path');
 
 server.use((require('cors'))());
 server.use(agent.json());
@@ -12,7 +13,7 @@ const fileSystem = require('fs/promises');
 //Check User
 server.post('/login',(req,res) => {
 	if( req.body.username == undefined || req.body.password == undefined )
-		req.sendStatus(400);
+		return res.sendStatus(400);
 
 	const foundUser = Object.values(users).find(user => user.username == req.body.username && user.password == req.body.password);
 
@@ -36,9 +37,9 @@ server.post('/register',async (req,res) => {
 	||	req.body.password == undefined
 	||	req.body.email == undefined
 	||	req.body.phone == undefined
-	) res.sendStatus(400);
+	) return res.sendStatus(400);
 
-	const userSearch = Object.values(users).find(user => user.username == req.body || user.email == req.body.email);
+	const userSearch = Object.values(users).find(user => user.username == req.body.username || user.email == req.body.email);
 	if( userSearch != undefined ) {
 		res.send(JSON.stringify({
 			'status': "EXISTS"
@@ -53,7 +54,7 @@ server.post('/register',async (req,res) => {
 			password: req.body.password
 		};
 
-		const usersFileHandler = await fileSystem.open('users.json','r+');
+		const usersFileHandler = await fileSystem.open(path.join(__dirname, 'users.json'),'r+');
 		usersFileHandler.write(JSON.stringify(users));
 
 		res.sendStatus(201);
@@ -65,7 +66,7 @@ server.post('/register',async (req,res) => {
 //All Products
 server.get('/',(req,res) => {
 	if( req.query['category'] === undefined ) {
-		res.send({count: data.length,data: data.products});
+		res.send({count: data.products.length,data: data.products});
 	}else {
 		if( /^[a-z]{1,15}$/i.test(req.query['category']) ) {
 			const d = data.products.filter(product => product.category === req.query['category']);
@@ -81,7 +82,7 @@ server.get('/',(req,res) => {
 server.get('/search/:query',(req,res) => {
 	const searchQuery = req.params['query'];
 	if( !/[a-z]{1,20}/i.test(searchQuery) )
-		res.sendStatus(400);
+		return res.sendStatus(400);
 
 	const resultData = data['products'].filter(product => product.name.toLowerCase().indexOf(searchQuery.toLowerCase()) != -1);
 
