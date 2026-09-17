@@ -3,7 +3,7 @@ const productId = params.get('id');
 
 const main = document.getElementById('product-details');
 
-fetch(`http://localhost:8000/${productId}`)
+fetch(`https://iti-group-project-server.vercel.app/${productId}`)
   .then(res => res.json())
   .then(product => {
     console.log(product);

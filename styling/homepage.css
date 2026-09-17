@@ -1,14 +1,133 @@
 #fold {
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	flex-direction: column;
+    position:relative;
+    height:80vh;
+    width:100vw;
+    
+    margin-bottom:100px;
+    }
 
-	height:calc(100vh - 120px);
+#fold-slider {
+    position: absolute;
+    inset:0;
+    
+    display:flex;
+    
+    width:400vw;
+    
+    overflow:hidden;
+    
+    transition: left 1.0s ease-in-out;}
 
-	padding-block:20px;
+.fold-slider-slide {
+    flex-grow:1;
+    
+    position:relative;
+    
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    
+    flex-direction: column;
+    
+    color:#FFF;
+    
+    padding:70px 100px;
+}
 
-	background: url('../images/homepage-big.jpg') left center/cover fixed;
+.fold-slider-slide h2 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.fold-slider-slide p {
+    font-size:25px;
+}
+
+#fold-slider .background {
+    object-fit: contain;
+    
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    opacity:0;
+}
+
+#fold-slider .fold-slider-slide.active .background {
+    opacity:1;
+}
+
+#fold-slider .foreground {
+    object-fit:contain;
+    width:50%;
+    
+    position:absolute;
+    left:25%;
+    bottom:-100%;
+    
+    opacity:0;
+    
+    transition:all 1.0s ease-in-out;
+}
+
+#fold-slider .fold-slider-slide.active .foreground {
+    opacity:1;
+    bottom:-20px;
+}
+
+#fold #fold-slider-nav-prev,
+#fold #fold-slider-nav-next {
+    position:absolute;
+    height:48px;
+    width:48px;
+    
+    top:calc(50% - 24px);
+    left:5px;
+    
+    border-radius:90px;
+    
+    background:#EEE;
+    
+    border:none;
+    
+    font-weight: bolder;
+}
+
+#fold #fold-slider-nav-next {
+    right: 20px;
+    left:initial;
+}
+
+#fold-slider-placeholders {
+    position: absolute;
+    
+    bottom:-28px;
+    width:400px;
+    left:calc(50% - 200px);
+    
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#fold-slider-placeholders button {
+    border:2px solid #0000;
+    border-color: #0000#0000#000#000;
+    border-radius:90px;
+    
+    background:#FFF;
+    
+    width:48px;
+    height:48px;
+    
+    transform:rotate(-45deg);
+}
+
+#fold-slider-placeholders button img {
+    transform:rotate(45deg);
+}
+
+#fold-slider-placeholders button.active {
+    background: var(--success);
 }
 
 .bw-special-text-section h3 {

@@ -32,7 +32,7 @@ function updateWishlistCount() {
   if (wishlistCounter) wishlistCounter.dataset['count'] = wishlist.length;
 }
 updateWishlistCount();
-
+ 
 // ===========================================
 // Product constructor
 // ===========================================
