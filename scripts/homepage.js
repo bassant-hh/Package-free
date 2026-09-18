@@ -139,3 +139,71 @@ getCategoryProducts(
 		slide.getElementsByClassName('carousel-container')[0].style.width = Number(slide.dataset['limit']) * 100 +'%';
 	},
 document.getElementById('laundry-category'));
+
+// Hero Slider Interactivity
+(function initHeroSlider() {
+	const slider = document.getElementById('fold-slider');
+	if (!slider) return;
+
+	const slides = Array.from(slider.getElementsByClassName('fold-slider-slide'));
+	const prevBtn = document.getElementById('fold-slider-nav-prev');
+	const nextBtn = document.getElementById('fold-slider-nav-next');
+	const placeholderNav = document.getElementById('fold-slider-placeholders');
+	const placeholders = placeholderNav ? Array.from(placeholderNav.getElementsByClassName('fold-slider-single-placeholder')) : [];
+
+	function goToHeroSlide(slideIndex) {
+		const totalSlides = slides.length || 4;
+		let targetIndex = Number(slideIndex);
+
+		if (targetIndex > totalSlides) {
+			targetIndex = 1;
+		} else if (targetIndex < 1) {
+			targetIndex = totalSlides;
+		}
+
+		slider.dataset['current'] = targetIndex;
+		slider.style.left = '-' + ((targetIndex - 1) * 100) + 'vw';
+
+		slides.forEach((slide, idx) => {
+			if (idx === targetIndex - 1) {
+				slide.classList.add('active');
+			} else {
+				slide.classList.remove('active');
+			}
+		});
+
+		placeholders.forEach((btn, idx) => {
+			if (idx === targetIndex - 1) {
+				btn.classList.add('active');
+			} else {
+				btn.classList.remove('active');
+			}
+		});
+	}
+
+	if (nextBtn) {
+		nextBtn.addEventListener('click', () => {
+			const current = Number(slider.dataset['current'] || 1);
+			goToHeroSlide(current + 1);
+		});
+	}
+
+	if (prevBtn) {
+		prevBtn.addEventListener('click', () => {
+			const current = Number(slider.dataset['current'] || 1);
+			goToHeroSlide(current - 1);
+		});
+	}
+
+	placeholders.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const slideId = Number(btn.dataset['slide']);
+			if (slideId) {
+				goToHeroSlide(slideId);
+			}
+		});
+	});
+
+	// Set initial state
+	goToHeroSlide(Number(slider.dataset['current'] || 1));
+})();

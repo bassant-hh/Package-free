@@ -1,129 +1,157 @@
 #fold {
-    position:relative;
-    height:80vh;
-    width:100vw;
-    
-    margin-bottom:100px;
-    }
+    position: relative;
+    height: 80vh;
+    min-height: 480px;
+    max-height: 750px;
+    width: 100vw;
+    margin-bottom: 60px;
+    padding: 0 !important;
+    overflow: hidden;
+}
 
 #fold-slider {
     position: absolute;
-    inset:0;
-    
-    display:flex;
-    
-    width:400vw;
-    
-    overflow:hidden;
-    
-    transition: left 1.0s ease-in-out;}
+    inset: 0;
+    display: flex;
+    width: 400vw;
+    height: 100%;
+    overflow: hidden;
+    transition: left 1.0s ease-in-out;
+}
 
 .fold-slider-slide {
-    flex-grow:1;
-    
-    position:relative;
-    
-    display:flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    
+    width: 100vw;
+    flex: 0 0 100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-    
-    color:#FFF;
-    
-    padding:70px 100px;
+    color: #FFF;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .fold-slider-slide h2 {
-    font-size: 40px;
+    font-size: clamp(24px, 4vw, 40px);
     font-weight: bolder;
+    line-height: 1.25;
+    max-width: 650px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .fold-slider-slide p {
-    font-size:25px;
+    font-size: clamp(15px, 2vw, 22px);
+    line-height: 1.45;
+    max-width: 550px;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 #fold-slider .background {
-    object-fit: contain;
-    
-    position:absolute;
-    inset:0;
-    z-index:-1;
-    opacity:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+    pointer-events: none;
 }
 
 #fold-slider .fold-slider-slide.active .background {
-    opacity:1;
+    opacity: 1;
 }
 
 #fold-slider .foreground {
-    object-fit:contain;
-    width:50%;
-    
-    position:absolute;
-    left:25%;
-    bottom:-100%;
-    
-    opacity:0;
-    
-    transition:all 1.0s ease-in-out;
+    object-fit: contain;
+    width: 45%;
+    max-height: 55%;
+    position: absolute;
+    left: 27.5%;
+    bottom: -100%;
+    opacity: 0;
+    z-index: 2;
+    transition: all 1.0s ease-in-out;
+    pointer-events: none;
 }
 
 #fold-slider .fold-slider-slide.active .foreground {
-    opacity:1;
-    bottom:-20px;
+    opacity: 1;
+    bottom: -20px;
 }
 
 #fold #fold-slider-nav-prev,
 #fold #fold-slider-nav-next {
-    position:absolute;
-    height:48px;
-    width:48px;
-    
-    top:calc(50% - 24px);
-    left:5px;
-    
-    border-radius:90px;
-    
-    background:#EEE;
-    
-    border:none;
-    
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: calc(50% - 24px);
+    left: 20px;
+    border-radius: 90px;
+    background: rgba(238, 238, 238, 0.9);
+    border: none;
     font-weight: bolder;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 #fold #fold-slider-nav-next {
     right: 20px;
-    left:initial;
+    left: auto;
+}
+
+#fold #fold-slider-nav-prev:hover,
+#fold #fold-slider-nav-next:hover {
+    background: #FFFFFF;
+    transform: scale(1.05);
 }
 
 #fold-slider-placeholders {
     position: absolute;
-    
-    bottom:-28px;
-    width:400px;
-    left:calc(50% - 200px);
-    
+    bottom: 20px;
+    width: min(360px, 85vw);
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 
 #fold-slider-placeholders button {
-    border:2px solid #0000;
-    border-color: #0000#0000#000#000;
-    border-radius:90px;
-    
-    background:#FFF;
-    
-    width:48px;
-    height:48px;
-    
-    transform:rotate(-45deg);
+    border: 2px solid #0000;
+    border-color: #0000 #0000 #000 #000;
+    border-radius: 90px;
+    background: #FFF;
+    width: 44px;
+    height: 44px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    padding: 0;
 }
 
 #fold-slider-placeholders button img {
-    transform:rotate(45deg);
+    transform: rotate(45deg);
+    height: 22px;
+    width: auto;
+    object-fit: contain;
 }
 
 #fold-slider-placeholders button.active {
@@ -177,14 +205,114 @@ main .card .card-title {
 	font-size:25px;
 }
 
+@media(max-width:1024px) {
+    #fold {
+        height: 70vh;
+        min-height: 440px;
+    }
+
+    .fold-slider-slide {
+        padding: 50px 60px;
+    }
+
+    #fold-slider .foreground {
+        width: 50%;
+        left: 25%;
+        max-height: 50%;
+    }
+}
+
 @media(max-width:767px) {
-	#fold {
-		background:url('../images/homepage-small.jpg') center/cover;
-	}
+    #fold {
+        height: 65vh;
+        min-height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .fold-slider-slide {
+        padding: 35px 25px;
+    }
+
+    #fold-slider .foreground {
+        width: 55%;
+        left: 22.5%;
+        max-height: 45%;
+    }
+
+    #fold #fold-slider-nav-prev,
+    #fold #fold-slider-nav-next {
+        width: 38px;
+        height: 38px;
+        top: calc(50% - 19px);
+        left: 10px;
+    }
+
+    #fold #fold-slider-nav-next {
+        right: 10px;
+        left: auto;
+    }
+
+    #fold-slider-placeholders {
+        bottom: 15px;
+        width: min(300px, 85vw);
+    }
+
+    #fold-slider-placeholders button {
+        width: 38px;
+        height: 38px;
+    }
+
+    #fold-slider-placeholders button img {
+        height: 18px;
+    }
 
 	.products-carousel .carousel-container > * {
 		width:50vw !important;
 	}
+}
+
+@media(max-width:480px) {
+    #fold {
+        height: 60vh;
+        min-height: 360px;
+    }
+
+    .fold-slider-slide {
+        padding: 25px 18px;
+    }
+
+    #fold-slider .foreground {
+        width: 65%;
+        left: 17.5%;
+        max-height: 40%;
+    }
+
+    #fold #fold-slider-nav-prev,
+    #fold #fold-slider-nav-next {
+        width: 34px;
+        height: 34px;
+        top: calc(50% - 17px);
+        left: 6px;
+    }
+
+    #fold #fold-slider-nav-next {
+        right: 6px;
+        left: auto;
+    }
+
+    #fold-slider-placeholders {
+        bottom: 12px;
+        width: min(240px, 85vw);
+    }
+
+    #fold-slider-placeholders button {
+        width: 34px;
+        height: 34px;
+    }
+
+    #fold-slider-placeholders button img {
+        height: 16px;
+    }
 }
 
 .show-on-scroll {
