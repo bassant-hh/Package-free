@@ -58,7 +58,7 @@ const urlParams = new URLSearchParams(window.location.search);
   }
 
   // build url 
-  let fetchUrl = 'https://iti-group-project-server.vercel.app';
+  let fetchUrl = API_BASE_URL;
   if (category) {
     fetchUrl += '?category=' + encodeURIComponent(category);
   }

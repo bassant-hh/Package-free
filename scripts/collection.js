@@ -44,7 +44,7 @@ function Product(data) {
 
 const container = document.querySelector(".product-grid");
 
-fetch("https://iti-group-project-server.vercel.app")
+fetch(API_BASE_URL)
   .then(res => res.json())
   .then(result => {
     

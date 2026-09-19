@@ -184,7 +184,7 @@
 
         // Initialize
         const agent = new XMLHttpRequest();
-        agent.open('GET','https://iti-group-project-server.vercel.app');
+        agent.open('GET',API_BASE_URL);
         agent.send();
 
         agent.addEventListener('readystatechange',() => {

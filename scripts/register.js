@@ -17,7 +17,7 @@ async function register() {
   }
 
   try {
-    const response = await fetch("https://iti-group-project-server.vercel.app/register", {
+    const response = await fetch(`${API_BASE_URL}/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
