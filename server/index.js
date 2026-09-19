@@ -54,8 +54,10 @@ server.post('/register',async (req,res) => {
 			password: req.body.password
 		};
 
-		const usersFileHandler = await fileSystem.open(path.join(__dirname, 'users.json'),'r+');
-		usersFileHandler.write(JSON.stringify(users));
+		await fileSystem.writeFile(
+			path.join(__dirname, 'users.json'),
+			JSON.stringify(users)
+		);
 
 		res.sendStatus(201);
 	}
