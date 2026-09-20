@@ -41,49 +41,65 @@ Array.from(document.getElementsByClassName('products-carousel')).forEach(slide =
 	slide.dataset['current'] = 0;
 
 	const assignSlideProps = () => {
-		if( document.body.offsetWidth >= 768 ) {
-			slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 2);
-		}else {
-			slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 5);
+		const count = container[0].children.length;
+		slide.dataset['count'] = count;
+		const perPage = document.body.offsetWidth >= 768 ? 5 : 2;
+		const limit = Math.max(1, Math.ceil(count / perPage));
+		slide.dataset['limit'] = limit;
+
+		let current = Number(slide.dataset['current'] || 0);
+		if (current >= limit) {
+			current = 0;
+			slide.dataset['current'] = 0;
 		}
 
-		slide.getElementsByClassName('carousel-limit')[0].innerText = slide.dataset['limit'];
+		const currentEl = slide.getElementsByClassName('carousel-current')[0];
+		if (currentEl) currentEl.innerText = current + 1;
 
-		container[0].style.width = Number(slide.dataset['limit']) * 100 +'%';
+		const limitEl = slide.getElementsByClassName('carousel-limit')[0];
+		if (limitEl) limitEl.innerText = limit;
+
+		container[0].style.width = (limit * 100) + '%';
+		container[0].style.left = '-' + (current * 100) + '%';
 	};
+
+	slide.assignSlideProps = assignSlideProps;
 
 
 	//Drag & Slide Effect On Slider + Touching
 	var anchorPosition = undefined;
+	const getClientX = ev => {
+		if (ev.changedTouches && ev.changedTouches.length > 0) return ev.changedTouches[0].clientX;
+		if (ev.touches && ev.touches.length > 0) return ev.touches[0].clientX;
+		return ev.clientX;
+	};
+
 	const eventDownFunc = downEvent => {
-		anchorPosition = downEvent.__proto__.constructor.name == 'TouchEvent' ? downEvent.changedTouches[0].clientX:downEvent.clientX;
+		anchorPosition = getClientX(downEvent);
 	};
 
 	const eventMoveFunc = moveEvent => {
 		if( anchorPosition == undefined ) return;
 
-		let currentPosition = 0;
-		
-		if( moveEvent.__proto__.constructor.name === 'TouchEvent' ) currentPosition = moveEvent.changedTouches[0].clientX;
-		else currentPosition = moveEvent.clientX;
-
-		if( Math.abs(anchorPosition - currentPosition) <= 150 ) {
-			container[0].style.marginLeft = ((currentPosition - anchorPosition) / 1.75) + 'px';
+		let currentPosition = getClientX(moveEvent);
+		if( moveEvent.type && moveEvent.type.startsWith('touch') ) {
+			moveEvent.preventDefault();
 		}
-	}
+
+		container[0].style.marginLeft = ((currentPosition - anchorPosition) / 1.75) + 'px';
+	};
 
 	const eventUpFunc = upEvent => {
+		if( anchorPosition == undefined ) return;
 
 		container[0].style.marginLeft = '0px';
-		let diff = 0;
-		if( upEvent.__proto__.constructor.name === 'TouchEvent' ) diff = anchorPosition - upEvent.changedTouches[0].clientX;
-		else diff = anchorPosition - upEvent.clientX;
+		let diff = anchorPosition - getClientX(upEvent);
 		
 		anchorPosition = undefined;
-		if( diff >= 100 ) {
-			changeSlide(container[0].parentElement,1);
-		}else if( diff <= -100 ) {
-			changeSlide(container[0].parentElement,-1);
+		if( diff >= 40 ) {
+			changeSlide(slide, 1);
+		}else if( diff <= -40 ) {
+			changeSlide(slide, -1);
 		}
 	};
 
@@ -91,9 +107,11 @@ Array.from(document.getElementsByClassName('products-carousel')).forEach(slide =
 	container[0].addEventListener('mouseup',eventUpFunc);
 	container[0].addEventListener('mousemove',eventMoveFunc);
 
-	//container[0].addEventListener('touchstart',eventDownFunc);
-	//container[0].addEventListener('touchmove',eventMoveFunc);
-	//container[0].addEventListener('touchend',eventUpFunc);
+	container[0].addEventListener('touchstart',eventDownFunc, { passive: true });
+	container[0].addEventListener('touchmove',eventMoveFunc, { passive: false });
+	container[0].addEventListener('touchend',eventUpFunc);
+
+
 
 	window.addEventListener('resize',assignSlideProps);
 	window.addEventListener('load',assignSlideProps);
@@ -109,34 +127,24 @@ Array.from(document.getElementsByClassName('products-carousel')).forEach(slide =
 
 //Load Products
 getAllProducts(function(data,section) {
+	if (!section) return;
 	fillSlider(data.data.slice(0,9),section);
 	const slide = section.getElementsByClassName('products-carousel')[0];
-	if( document.body.offsetWidth >= 768 ) {
-		slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 2);
-	}else {
-		slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 5);
+	if (slide && slide.assignSlideProps) {
+		slide.assignSlideProps();
 	}
-
-	slide.getElementsByClassName('carousel-limit')[0].innerText = slide.dataset['limit'];
-
-	slide.getElementsByClassName('carousel-container')[0].style.width = Number(slide.dataset['limit']) * 100 +'%';
 },document.getElementById('best-sellers'));
 
 //Laundry Category Only
 getCategoryProducts(
 	'Laundry',
 	function(data,section){
+		if (!section) return;
 		fillSlider(data.data,section);
 		const slide = section.getElementsByClassName('products-carousel')[0];
-		if( document.body.offsetWidth >= 768 ) {
-			slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 2);
-		}else {
-			slide.dataset['limit'] = Math.ceil(slide.dataset['count'] / 5);
+		if (slide && slide.assignSlideProps) {
+			slide.assignSlideProps();
 		}
-
-		slide.getElementsByClassName('carousel-limit')[0].innerText = slide.dataset['limit'];
-
-		slide.getElementsByClassName('carousel-container')[0].style.width = Number(slide.dataset['limit']) * 100 +'%';
 	},
 document.getElementById('laundry-category'));
 

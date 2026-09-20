@@ -52,7 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
             li.style.cursor = 'pointer';
             li.style.padding = '5px 10px';
             li.onclick = () => {
-              window.location.href = `${is_home ? 'pages/':''}single-product.html?id=${product.id}`;
+              if (typeof getProductUrl === 'function') {
+                window.location.href = getProductUrl(product.id);
+              } else {
+                const prefix = (typeof is_home !== 'undefined' && is_home) || !window.location.pathname.includes('/pages/') ? 'pages/' : '';
+                window.location.href = `${prefix}single-product.html?id=${product.id}`;
+              }
             };
             list.appendChild(li);
           });
