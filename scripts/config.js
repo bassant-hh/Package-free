@@ -1,3 +1,9 @@
+const IS_LOCAL =
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1';
+
 const API_BASE_URL =
     window.API_BASE_URL ||
-    'https://iti-group-project-server.vercel.app';
+    (IS_LOCAL
+        ? 'http://localhost:8000'
+        : 'https://iti-group-project-server.vercel.app');
