@@ -1,0 +1,28 @@
+
+.contact-section {
+  background-color: #DEDED2;
+  color: #2f4f3b;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #4d6b57;
+}
+
+.contact-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4d6b57;
+}
+
+.contact-link {
+  color: #2f4f3b;
+  text-decoration: underline;
+  font-weight: 500;
+}

@@ -1,0 +1,28 @@
+table {
+	width:100%;
+
+	border-collapse:collapse;
+}
+
+table tr td,
+table tr th {
+	text-align:center;
+
+	border:2px solid #EEE;
+
+	padding:10px;
+
+	font-weight: bolder;
+}
+
+table thead th {
+	background: var(--secondary-color);
+}
+
+main {
+	max-width:900px;
+
+	margin:20px auto;
+
+	min-height: 50vh;
+}

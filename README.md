@@ -11,22 +11,22 @@
 * Button States: ( Idle , Hover , Disabled , Focus )
 
 * ## Phase 3
-- [ ] Header + Cart
-- [ ] Footer + Cookies Bar
-- [ ] **Product & Taxonomy Card**
-	- [ ] Price & Special Price
-	- [ ] On Sale Badge -or- "Sold out"
+- [x] Header + Cart
+- [x] Footer + Cookies Bar
+- [x] **Product & Taxonomy Card**
 
-- [ ] -> Pages
-	- [ ] Contact Us
-	- [ ] About Us
-	- [ ] Homepage
-	- [ ] Collection
-	- [ ] Single Product
-	- [ ] Checkout
-		- [ ] Special Header
-		- [ ] * No Footer
-	- [ ] Authentication
+- [x] -> Pages
+	- [x] Contact Us
+	- [x] About Us
+	- [x] Homepage
+	- [x] Collection
+	- [x] Single Product
+	- [x] Checkout
+		- [x] Special Header
+		- [x] * No Footer
+	- [x] Authentication
+		- [x] Login
+		- [x] Register
 	
 * ## Phase 4
-- [ ] Test & Polish
+- [x] Test & Polish

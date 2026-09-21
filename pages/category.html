@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Free Package Shop</title>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1.0' />
+  <link rel="stylesheet" href="../styling/category.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel='stylesheet' href='../styling/main.css'>
+  <link rel="stylesheet" href="../styling/search.css" />
+  <link rel="stylesheet" href="../styling/wishlist.css" />
+</head>
+
+<body id = 'category-page'>
+  <section id='above-header' class='text-center p-1 bg-primary'>
+    <a class='text-white'>Enjoy free domestic shipping on orders $65+</a>
+  </section>
+    <header class = 'd-flex align-items-center justify-content-between bg-secondary p-4' id = 'main-site-header'>
+      <button class = 'd-block d-md-none bg-transparent border-0' id = 'toggle-main-menu'>
+        <i class = 'bi bi-list'></i>
+      </button>
+      <div id = 'main-menu'>
+        <ul class = 'd-md-inline-flex m-0 p-0 list-unstyled'>
+          <li class = 'parent-element px-3' data-child = "shop-all-menu">
+            <button class = 'bg-transparent pr-2 border-0 text-primary menu-toggle' data-toggle = "shop-all-menu" id = 'open-shop-all'>Shop</button>
+            <ul class = 'child-menu' id = 'shop-all-menu'>
+              <li class = 'd-block d-md-none menu-toggle get-back' data-original = "open-shop-all" data-toggle='shop-all-menu'><i class = 'bi bi-arrow-left mr-4'></i> Shop</li>
+              <li>
+                <a href="collection.html" class = 'text-primary'>
+                  Shop All
+                </a>
+              </li>
+              <li class = 'parent-element'>
+                <a href = '#' class = 'menu-toggle text-primary' data-toggle = 'featured-products' id = 'featured-products-toggle'>
+                  Shop by Category
+                </a>
+                <ul class = 'child-menu' id = 'featured-products'>
+                  <li class = 'menu-toggle get-back d-block d-md-none' data-original = "featured-products-toggle" data-toggle='featured-products'><i class = 'bi bi-arrow-left mr-4'></i> Featured</li>
+                  <li><a class = 'text-primary' href = 'category.html?category=Laundry'>Laundry</a></li>
+                  <li><a class = 'text-primary' href = 'category.html?category=Kitchen'>Kitchen</a></li>
+                  <li><a class = 'text-primary' href = 'category.html?category=Bathroom'>Bathroom</a></li>
+                  <li><a class = 'text-primary' href = 'category.html?category=Bedroom'>Bedroom</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class = 'px-3'>
+            <a href = 'about-us.html' class = 'text-primary'>About Us</a>
+          </li>
+          <li class = 'px-3'>
+            <a href="contact-us.html" class = 'text-primary'>Contact Us</a>
+          </li>
+        </ul>
+        <footer class = 'd-block d-md-none p-5 position-absolute bottom-0 w-100'>
+          <a href = 'login.html' class = 'text-primary' style = 'font-size:18px'>
+            <i class = 'bi bi-person'></i>
+            Log in
+          </a>
+          <nav class = 'd-flex py-4'>
+            <a href = '#facebook-link' target = '_blank' class = 'text-primary mr-2'>
+              <i class = 'bi bi-facebook'></i>
+            </a>
+            <a href = '#pinterest-link' target = '_blank' class = 'text-primary mx-2'>
+              <i class = 'bi bi-pinterest'></i>
+            </a>
+            <a href = '#instagram' target = '_blank' class = 'text-primary mx-2'>
+              <i class = 'bi bi-instagram'></i>
+            </a>
+            <a href = '#tiktok' target = '_blank' class = 'text-primary mx-2'>
+              <i class = 'bi bi-tiktok'></i>
+            </a>
+          </nav>
+        </footer>
+      </div>
+
+    <a href = '../index.html'><img src = '../images/logo.svg' width = '180' alt = "Website's Logo" /></a>
+
+    <ul class='d-flex p-0 m-0 list-unstyled' id='icon-list'>
+     
+     <!-- =================================================== -->
+
+       <li class='mx-2 position-relative'>
+    
+    <button id='toggle-search' class='bg-transparent border-0 text-primary'>
+      <i class='bi bi-search'></i>
+    </button>
+
+    <!-- input السيرش (مخفي) -->
+       <div class="search-wrapper position-relative">
+
+    <input
+      type="search"
+      id="search-input"
+      placeholder=" search for your product  ..."
+      class="navbar-search-input"
+      autocomplete="off"   />
+
+    <ul id="search-suggestions" ></ul>
+    </div>
+
+  </li>
+
+      
+      <!-- ======================================================== -->
+      
+      
+      <li class='mx-2'>
+        <a href='login.html' class='d-none d-md-block button bg-transparent border-0 text-primary'>
+          <i class='bi bi-person' style='font-size:23px'></i>
+        </a>
+      </li>
+      <li class='mx-2'>
+        <button id='open-cart-panel' data-count="0" class='bg-transparent border-0 text-primary'>
+          <i class='bi bi-bag'></i>
+        </button>
+      </li>
+      <li class='mx-2'>
+        <a id='wishlist-cont' href = 'wishlist.html' data-count="0" class = 'bg-transparent border-0 text-primary'>
+          <i class = 'bi bi-heart wishlist-main-counter'></i>
+        </a>
+      </li>
+    </ul>
+
+      <section id = 'cart-panel' class = 'p-2'>
+
+        <header class = 'd-flex justify-content-between align-items-center'>
+          <h2 style = 'font-size:20px'>Your Cart</h2>
+          <button id = 'close-cart-panel' class = 'bg-transparent border-0' style = 'font-size:22px'>
+            <i class = 'bi bi-x'></i>
+          </button>
+        </header>
+
+        <section id = 'empty-cart' class = 'd-flex flex-column justify-content-center align-items-center p-3'>
+          <strong>Your cart is empty</strong>
+          <a class = 'darkGreen-btn p-2 mt-2' href = 'collection.html'>Continue shopping</a>
+        </section>
+
+        <table class = 'w-100' id = 'cart-products-table'>
+          <thead>
+            <tr>
+              <th class = 'text-left'><small class = 'text-primary'>PRODUCT</small></th>
+              <th class = 'text-right' style = 'width:100px;'><small class = 'text-primary'>TOTAL</small></th>
+            </tr>
+          </thead>
+          <tbody id = 'cart-products'>
+          </tbody>
+        </table>
+        
+        <footer id = 'cart-totals'>
+          <div class = 'd-flex align-items-center justify-content-between'>
+            <b>Estimated total</b>
+            <span id = 'cart-totals-summary'>$xx.xx USD</span>
+          </div>
+          <small class = 'text-gray' style = 'font-size:11px'>Taxes, discounts and shipping calculated at checkout</small>
+          <a href = 'checkout.html' class = 'p-2 m-auto d-block text-center darkGreen-btn'>Checkout</a>
+        </footer>
+
+        <div class = 'layout'></div>
+      </section>
+    </header>
+  <!-- ======================================================================================== -->
+  <main class="container my-4 my-md-5">
+    <div class="category-header text-center mb-4 mb-md-5">
+      <h1 id="category-title" class="category-page-title text-capitalize">Category</h1>
+      <p id="category-subtitle" class="category-page-subtitle">Explore our sustainable & eco-friendly collection</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Products render dynamically here -->
+    </div>
+  </main>
+  <!-- ================================================================================== -->
+
+  <footer class='bg-primary px-3 py-5'>
+    <nav class='d-block d-md-flex justify-content-center align-items-center'>
+      <a href='about-us.html' class='d-block d-md-inline mx-2 py-2 text-white'>About Us</a>
+      <a href='contact-us.html' class='mx-2 d-block d-md-inline py-2 text-white'>Contact Us</a>
+      <a href='collection.html' class='mx-2 d-block d-md-inline py-2 text-white'>Shop All</a>
+    </nav>
+    <ul class='d-flex justify-content-center align-items-center px-0 py-5 list-unstyled'>
+      <li>
+        <a href='#facebook' class='mx-2'>
+          <i class='bi bi-facebook text-white'></i>
+        </a>
+        <a href='#instagram' class='mx-2'>
+          <i class='bi bi-instagram text-white'></i>
+        </a>
+        <a href='#tiktok' class='mx-2'>
+          <i class='bi bi-tiktok text-white'></i>
+        </a>
+        <a href='#pinterest' class='mx-2'>
+          <i class='bi bi-pinterest text-white'></i>
+        </a>
+    </ul>
+    <hr style='border-color:#FFF2;' />
+
+    <ul class='d-flex list-unstyled px-0 justify-content-center align-items-center dot-separated-menu'>
+      <li class='text-white'>
+        &copy;
+        2026, Package Free
+      </li>
+      <li>
+        <a href='#privacy-policy' class='text-white mx-2'>Privacy Policy</a>
+      </li>
+      <li>
+        <a href='#terms' class='text-white mx-2'>Terms Of Use</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="../scripts/config.js"></script>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/search.js"></script>
+  <script src="../scripts/category.js"></script>
+  <script src="../scripts/wishlist.js"></script>
+</body>
+
+</html>

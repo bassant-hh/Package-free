@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package Free - Checkout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styling/checkout.css" />
+    <link rel="stylesheet" href="../styling/main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="checkout-wrapper">
+        <!-- Header -->
+        <div class="header-section">
+          <div style="width: 40px"></div>
+          <a class="logo" href = '../index.html'>Package<span>®</span><br />Free</a>
+          <!-- <div class="cart-icon-header">
+            <svg viewBox="0 0 24 24">
+              <path
+                class="icon-bag"
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              />
+              <line class="icon-bag" x1="3" y1="6" x2="21" y2="6" />
+              <path class="icon-bag" d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <div class="cart-badge" id="cartBadge">1</div>
+          </div> -->
+        </div>
+
+        <!-- Left Section - Form -->
+        <div class="checkout-form">
+          <div class="express-checkout">
+            <div class="express-title">Express checkout</div>
+            <div class="payment-buttons">
+              <button class="payment-btn shop">shop</button>
+              <button class="payment-btn paypal">PayPal</button>
+              <button class="payment-btn gpay">G Pay</button>
+            </div>
+            <div class="divider">OR</div>
+          </div>
+
+          <form id="checkoutForm">
+            <!-- Contact Section -->
+            <div class="mb-4">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2 class="fs-5 fw-semibold mb-0">Contact</h2>
+                <a
+                  href="../pages/login.html"
+                  class="text-decoration-underline"
+                  style="color: #666; font-size: 14px"
+                  >Sign in</a
+                >
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-check" >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="newsletter"
+                />
+                <label class="form-check-label" for="newsletter">
+                  Email me with news and offers
+                </label>
+              </div>
+            </div>
+
+            <!-- Delivery Section -->
+            <div class="mb-4">
+              <h2 class="fs-5 fw-semibold mb-3">Delivery</h2>
+              <div class="mb-3">
+                <select class="form-select" id="country" required>
+                  <option value="">Country/Region</option>
+                  <option value="US" selected>United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="AU">Australia</option>
+                </select>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apartment"
+                  placeholder="Apartment, suite, etc. (optional)"
+                />
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="City"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <select class="form-select" id="state" required>
+                    <option value="">State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                    <option value="TX">Texas</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="postal"
+                    placeholder="Postal code (option...)"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+
+            <!-- Shipping Method Section -->
+            <div class="mb-4">
+              <h2 class="fs-5 fw-semibold mb-3">Shipping method</h2>
+              <div
+                class="p-3 bg-light rounded"
+                style="
+                  background-color: #f5f2ed !important;
+                  font-size: 13px;
+                  color: #666;
+                "
+              >
+                Enter your shipping address to view available shipping methods.
+              </div>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="mb-4">
+              <h2 class="fs-5 fw-semibold mb-2">Payment</h2>
+              <p style="font-size: 13px; color: #666; margin-bottom: 16px">
+                All transactions are secure and encrypted.
+              </p>
+
+              <!-- Credit Card Option -->
+              <div
+                class="payment-option active"
+                data-payment="creditcard"
+                onclick="selectPayment('creditcard')"
+              >
+                <div class="payment-header-row">
+                  <div class="payment-method-name">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="creditCard"
+                      value="creditcard"
+                      checked
+                    />
+                    <label
+                      for="creditCard"
+                      style="margin: 0; cursor: pointer; font-weight: 600"
+                      >Credit card</label
+                    >
+                  </div>
+                  <div class="card-icons">
+                    <div class="card-icon" style="color: #1434cb">VISA</div>
+                    <div class="card-icon" style="color: #eb001b">●●</div>
+                    <div class="card-icon" style="color: #0066b2">AMEX</div>
+                    <div class="card-icon" style="color: #666">+5</div>
+                  </div>
+                </div>
+
+                <div class="payment-details">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardNumber"
+                      placeholder="Card number"
+                      required
+                    />
+                  </div>
+                  <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="expiry"
+                        placeholder="Expiration date (MM / YY)"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cvv"
+                        placeholder="Security code"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardName"
+                      placeholder="Name on card"
+                      required
+                    />
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sameAddress"
+                      checked
+                    />
+                    <label class="form-check-label" for="sameAddress">
+                      Use shipping address as billing address
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Shop Pay Option -->
+              <div
+                class="payment-option"
+                data-payment="shoppay"
+                onclick="selectPayment('shoppay')"
+              >
+                <div class="payment-header-row">
+                  <div class="payment-method-name">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="shopPay"
+                      value="shoppay"
+                    />
+                    <label
+                      for="shopPay"
+                      style="margin: 0; cursor: pointer; font-weight: 600"
+                      >Shop Pay</label
+                    >
+                  </div>
+                  <div class="payment-description">
+                    Pay in full or in installments
+                  </div>
+                </div>
+              </div>
+
+              <!-- PayPal Option -->
+              <div
+                class="payment-option"
+                data-payment="paypal"
+                onclick="selectPayment('paypal')"
+              >
+                <div class="payment-header-row">
+                  <div class="payment-method-name">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="paypal"
+                      value="paypal"
+                    />
+                    <label
+                      for="paypal"
+                      style="margin: 0; cursor: pointer; font-weight: 600"
+                      >PayPal</label
+                    >
+                  </div>
+                  <div style="width: 60px; height: 20px">
+                    <svg
+                      viewBox="0 0 124 33"
+                      fill="#003087"
+                      style="height: 100%"
+                    >
+                      <path
+                        d="M46.211 6.749h-6.839a.95.95 0 0 0-.939.802l-2.766 17.537a.57.57 0 0 0 .564.658h3.265a.95.95 0 0 0 .939-.803l.746-4.73a.95.95 0 0 1 .938-.803h2.165c4.505 0 7.105-2.18 7.784-6.5.306-1.89.013-3.375-.872-4.415-.972-1.142-2.696-1.746-4.985-1.746zM47 13.154c-.374 2.454-2.249 2.454-4.062 2.454h-1.032l.724-4.583a.57.57 0 0 1 .563-.481h.473c1.235 0 2.4 0 3.002.704.359.42.469 1.044.332 1.906z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="payment-details">
+                  <div class="paypal-notice">
+                    You'll be redirected to PayPal to complete your purchase
+                  </div>
+                  <button type="button" class="paypal-button">
+                    Pay with <strong>PayPal</strong>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Billing Address Section -->
+            <div class="billing-section">
+              <h3 class="section-subtitle">Billing address</h3>
+
+              <div
+                class="billing-option active"
+                data-billing="same"
+                onclick="selectBilling('same')"
+              >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="billingAddress"
+                    id="sameBilling"
+                    value="same"
+                    checked
+                  />
+                  <label class="form-check-label" for="sameBilling">
+                    Same as shipping address
+                  </label>
+                </div>
+              </div>
+
+              <div
+                class="billing-option"
+                data-billing="different"
+                onclick="selectBilling('different')"
+              >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="billingAddress"
+                    id="differentBilling"
+                    value="different"
+                  />
+                  <label class="form-check-label" for="differentBilling">
+                    Use a different billing address
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              Pay now
+            </button>
+
+            <div class="footer-links">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms of service</a>
+              <a href="#">Cancellations</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Section - Order Summary -->
+        <div class="order-summary">
+          <div id="productsList" class = 'is-loading'>
+          </div>
+
+          <div class="discount-section">
+            <div class="discount-input-wrapper">
+              <input
+                type="text"
+                class="discount-input"
+                placeholder="Discount code or gift card"
+                id="discountCode"
+              />
+              <button class="apply-btn" onclick="applyDiscount()">Apply</button>
+            </div>
+          </div>
+
+          <div class="summary-totals">
+            <div class="summary-row subtotal">
+              <span class="summary-label">Subtotal</span>
+              <span class="summary-value" id="subtotal">$9.00</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Shipping</span>
+              <span class="shipping-note">Enter shipping address</span>
+            </div>
+            <div class="summary-row total">
+              <span class="summary-label">Total</span>
+              <div>
+                <span class="usd-label">USD</span>
+                <span class="summary-value" id="total">$9.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/config.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/checkout.js"></script>
+    <script src="../scripts/wishlist.js"></script>
+  </body>
+</html>

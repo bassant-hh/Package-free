@@ -1,0 +1,146 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #DEDED2;
+  color: #1f3d2b;
+}
+
+/* ------------------ HERO SECTION ----------------- */
+.hero-section {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../images/about-primary.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+/* ------------------- FEATURES SECTION ---------------------*/
+.features-section {
+  background-color: #DEDED2;
+}
+
+.section-title {
+  font-weight: 500;
+  color: #2f3e2e;
+}
+
+.feature-card {
+  background-color: #DEDED2;
+  border: 1px solid #2f3e2e;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  color: #2f3e2e;
+}
+
+/* ------------------- PRODUCTS SECTION ----------------------*/
+.products-section {
+  background-color: #DEDED2;
+}
+
+.glass-btn {
+ background: transparent;
+  border: 3px solid #2f5e4e;
+  color: #2f5e4e;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border  ease;
+  
+}
+.glass-btn:hover {
+  border-width: 3px; 
+}
+.glass-btn:active {
+  transform: scale(1.12);
+}
+
+/* ------------------ SUBSCRIBE SECTION --------------------- */
+.subscribe-section {
+  background-color: #1f3b2d;
+}
+
+.subscribe-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.cream-btn {
+  background-color: #f5f0dc;
+  color: #1f3b2b;
+  border: none;
+  padding: 14px 48px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.cream-btn:hover {
+  
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.cream-btn:active {
+  transform: scale(1.12);
+}
+.subscribe-section p {
+  margin-bottom: 20px;
+}
+
+/* ---------------- IMPACT INITIATIVE SECTION ------------------- */
+.impact-wrapper {
+  background-color: #1f3b2d;
+}
+
+.impact-box {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: transparent;
+  background-color: #6a6f3c;
+}
+
+.impact-left {
+  background-color: #6a6f3c;
+  color: #ffffff;
+}
+
+.impact-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.impact-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.impact-right {
+  background-color: #ffffff;
+}
+
+.impact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

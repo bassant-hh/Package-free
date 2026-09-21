@@ -1,507 +1,592 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Free Package Shop</title>
-    <meta charset = 'utf-8' />
-    <meta name = 'viewport' content = 'width=device-width,initial-scale=1.0' />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link rel = 'stylesheet' href = 'styling/main.css' />
-    <link rel = 'stylesheet' href = 'styling/homepage.css' />
-  </head>
-  <body>
-    <section id = 'above-header' class = 'text-center p-1 bg-primary'>
-      <a class = 'text-white'>Enjoy free domestic shipping on orders $65+</a>
-    </section>
-    <header class = 'd-flex align-items-center justify-content-between bg-secondary p-4'>
-      <button class = 'd-block d-md-none bg-transparent border-0' id = 'toggle-main-menu'>
-        <i class = 'bi bi-list'></i>
-      </button>
-      <div id = 'main-menu'>
-        <ul class = 'd-md-inline-flex m-0 p-0 list-unstyled'>
-          <li class = 'parent-element px-3' data-child = "shop-all-menu">
-            <a href = '#' class = 'bg-transparent border-0 text-primary menu-toggle' data-toggle = "shop-all-menu" id = 'open-shop-all'>
-              Shop All
-            </a>
-            <ul class = 'child-menu' id = 'shop-all-menu'>
-              <li class = 'd-block d-md-none menu-toggle get-back' data-original = "open-shop-all" data-toggle='shop-all-menu'><i class = 'bi bi-arrow-left mr-4'></i> Shop All</li>
-              <li class = 'parent-element'>
-                <a href = '#' class = 'menu-toggle text-primary' data-toggle = 'featured-products' id = 'featured-products-toggle'>
-                  Featured
-                </a>
-                <ul class = 'child-menu' id = 'featured-products'>
-                  <li class = 'menu-toggle get-back d-block d-md-none' data-original = "featured-products-toggle" data-toggle='featured-products'><i class = 'bi bi-arrow-left mr-4'></i> Featured</li>
-                  <li>One</li>
-                  <li>Two</li>
-                </ul>
-              </li>
-              <li>World</li>
-            </ul>
-          </li>
-          <li class = 'px-3'>
-            <a href = '#' class = 'text-primary'>About Us</a>
-          </li>
-        </ul>
-        <footer class = 'd-block d-md-none p-5 position-absolute bottom-0 w-100'>
-          <a href = '#login' class = 'text-primary' style = 'font-size:18px'>
-            <i class = 'bi bi-person'></i>
-            Log in
+
+<head>
+<link rel="icon" type="image/png" href="./images/favicon.png">
+  <title>Free Package Shop</title>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1.0' />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel='stylesheet' href='styling/main.css' />
+  <link rel='stylesheet' href='styling/homepage.css' />
+  <link rel="stylesheet" href="styling/search.css">
+  <link rel="stylesheet" href="styling/wishlist.css" />
+
+
+
+</head>
+
+<body>
+  <section id='above-header' class='text-center p-1 bg-primary'>
+    <a class='text-white'>Enjoy free domestic shipping on orders $65+</a>
+  </section>
+  <header class='d-flex align-items-center justify-content-between bg-secondary p-4' id='main-site-header'>
+    <button class='d-block d-md-none bg-transparent border-0' id='toggle-main-menu'>
+      <i class='bi bi-list'></i>
+    </button>
+    <div id='main-menu'>
+      <ul class='d-md-inline-flex m-0 p-0 list-unstyled'>
+        <li class='parent-element px-3' data-child="shop-all-menu">
+          <button class='bg-transparent pr-2 border-0 text-primary menu-toggle' data-toggle="shop-all-menu"
+            id='open-shop-all'>Shop</button>
+          <ul class='child-menu' id='shop-all-menu'>
+            <li class='d-block d-md-none menu-toggle get-back' data-original="open-shop-all"
+              data-toggle='shop-all-menu'><i class='bi bi-arrow-left mr-4'></i> Shop</li>
+            <li>
+              <a href="pages/collection.html" class='text-primary'>
+                Shop All
+              </a>
+            </li>
+            <li class='parent-element'>
+              <a href='#' class='menu-toggle text-primary' data-toggle='featured-products'
+                id='featured-products-toggle'>
+                Shop by Category
+              </a>
+              <ul class='child-menu' id='featured-products'>
+                <li class='menu-toggle get-back d-block d-md-none' data-original="featured-products-toggle"
+                  data-toggle='featured-products'><i class='bi bi-arrow-left mr-4'></i> Featured</li>
+                <li><a class='text-primary' href='pages/category.html?category=Laundry'>Laundry</a></li>
+                <li><a class='text-primary' href='pages/category.html?category=Kitchen'>Kitchen</a></li>
+                <li><a class='text-primary' href='pages/category.html?category=Bathroom'>Bathroom</a></li>
+                <li><a class='text-primary' href='pages/category.html?category=Bedroom'>Bedroom</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class='px-3'>
+          <a href='pages/about-us.html' class='text-primary'>About Us</a>
+        </li>
+        <li class='px-3'>
+          <a href="pages/contact-us.html" class='text-primary'>Contact Us</a>
+        </li>
+      </ul>
+      <footer class='d-block d-md-none p-5 position-absolute bottom-0 w-100'>
+        <a href='login.html' class='text-primary' style='font-size:18px'>
+          <i class='bi bi-person'></i>
+          Log in
+        </a>
+        <nav class='d-flex py-4'>
+          <a href='#facebook-link' target='_blank' class='text-primary mr-2'>
+            <i class='bi bi-facebook'></i>
           </a>
-          <nav class = 'd-flex py-4'>
-            <a href = '#facebook-link' target = '_blank' class = 'text-primary mr-2'>
-              <i class = 'bi bi-facebook'></i>
-            </a>
-            <a href = '#pinterest-link' target = '_blank' class = 'text-primary mx-2'>
-              <i class = 'bi bi-pinterest'></i>
-            </a>
-            <a href = '#instagram' target = '_blank' class = 'text-primary mx-2'>
-              <i class = 'bi bi-instagram'></i>
-            </a>
-            <a href = '#tiktok' target = '_blank' class = 'text-primary mx-2'>
-              <i class = 'bi bi-tiktok'></i>
-            </a>
-          </nav>
-        </footer>
+          <a href='#pinterest-link' target='_blank' class='text-primary mx-2'>
+            <i class='bi bi-pinterest'></i>
+          </a>
+          <a href='#instagram' target='_blank' class='text-primary mx-2'>
+            <i class='bi bi-instagram'></i>
+          </a>
+          <a href='#tiktok' target='_blank' class='text-primary mx-2'>
+            <i class='bi bi-tiktok'></i>
+          </a>
+        </nav>
+      </footer>
+    </div>
+
+    <a href='index.html'><img src='images/logo.svg' width='180' alt="Website's Logo" /></a>
+
+    <ul class='d-flex p-0 m-0 list-unstyled' id='icon-list'>
+
+      <!-- =================================================== -->
+
+      <li class='mx-2 position-relative'>
+
+        <button id='toggle-search' class='bg-transparent border-0 text-primary'>
+          <i class='bi bi-search'></i>
+        </button>
+
+        <!-- input السيرش (مخفي) -->
+        <div class="search-wrapper position-relative">
+
+          <input type="search" id="search-input" placeholder=" search for your product  ..." class="navbar-search-input"
+            autocomplete="off" />
+
+          <ul id="search-suggestions"></ul>
+        </div>
+
+      </li>
+
+
+      <!-- ======================================================== -->
+
+
+      <li class='mx-2'>
+        <a href='pages/login.html' class='d-none d-md-block button bg-transparent border-0 text-primary'>
+          <i class='bi bi-person' style='font-size:23px'></i>
+        </a>
+      </li>
+      <li class='mx-2'>
+        <button id='open-cart-panel' data-count="0" class='bg-transparent border-0 text-primary'>
+          <i class='bi bi-bag'></i>
+        </button>
+      </li>
+      <li class='mx-2'>
+        <a id='wishlist-cont' href='pages/wishlist.html' data-count="0" class='bg-transparent border-0 text-primary'>
+          <i class='bi bi-heart wishlist-main-counter'></i>
+        </a>
+      </li>
+    </ul>
+
+    <section id='cart-panel' class='p-2'>
+
+      <header class='d-flex justify-content-between align-items-center'>
+        <h2 style='font-size:20px'>Your Cart</h2>
+        <button id='close-cart-panel' class='bg-transparent border-0' style='font-size:22px'>
+          <i class='bi bi-x'></i>
+        </button>
+      </header>
+
+      <section id='empty-cart' class='d-flex flex-column justify-content-center align-items-center p-3'>
+        <strong>Your cart is empty</strong>
+        <a class='darkGreen-btn p-2 mt-2' href='pages/collection.html'>Continue shopping</a>
+      </section>
+
+      <table class='w-100' id='cart-products-table'>
+        <thead>
+          <tr>
+            <th class='text-left'><small class='text-primary'>PRODUCT</small></th>
+            <th class='text-right' style='width:100px;'><small class='text-primary'>TOTAL</small></th>
+          </tr>
+        </thead>
+        <tbody id='cart-products'>
+        </tbody>
+      </table>
+
+      <footer id='cart-totals'>
+        <div class='d-flex align-items-center justify-content-between'>
+          <b>Estimated total</b>
+          <span id='cart-totals-summary'>$xx.xx USD</span>
+        </div>
+        <small class='text-gray' style='font-size:11px'>Taxes, discounts and shipping calculated at checkout</small>
+        <a href='pages/checkout.html' class='p-2 m-auto d-block text-center darkGreen-btn'>Checkout</a>
+      </footer>
+
+      <div class='layout'></div>
+    </section>
+  </header>
+
+  <main>
+
+    <section id='fold'>
+      <section id='fold-slider' data-current='1'>
+        <div class='fold-slider-slide' data-id='1'>
+          <h2>
+            Welcome to FreePackage Shop
+          </h2>
+          <p>
+            Discover eco-friendly products designed to care for your home, your health, and the planet. Sustainable
+            choices made simple.
+          </p>
+          <img class='foreground' src='./images/homepage/home-fg.png' />
+          <img class='background' src='./images/homepage/home-bg.jpg' />
+        </div>
+
+        <div class='fold-slider-slide' data-id='2'>
+          <h2>
+            Pure Natural Oils
+          </h2>
+          <p>
+            Experience the power of nature with our premium eco-friendly oils—perfect for wellness, skincare, and
+            everyday natural living.
+          </p>
+          <img class='foreground' src='./images/homepage/oil-fg.png' />
+          <img class='background' src='./images/homepage/oil-bg.jpg' />
+        </div>
+
+        <div class='fold-slider-slide' data-id='3'>
+          <h2>
+            Clean Home, Clean Planet
+          </h2>
+          <p>
+            Discover powerful plant-based cleaning products that keep your home sparkling while protecting the
+            environment.
+          </p>
+          <img class='foreground' src='./images/homepage/clean-fg.png' />
+          <img class='background' src='./images/homepage/clean-bg.jpg' />
+        </div>
+
+        <div class='fold-slider-slide' data-id='4'>
+          <h2>
+            Sustainable Bathroom Essentials
+          </h2>
+          <p>
+            Upgrade your bathroom with eco-friendly soaps, bamboo accessories, and plastic-free essentials for a cleaner
+            routine.
+          </p>
+          <img class='foreground' src='./images/homepage/bath-fg.png' />
+          <img class='background' src='./images/homepage/bath-bg.jpg' />
+        </div>
+      </section>
+      <nav id='fold-slider-placeholders'>
+        <button class='fold-slider-single-placeholder' data-slide="1" title='Site Intro Slide'>
+          <img src='./images/homepage/home-icon.svg' height='25' />
+        </button>
+        <button class='fold-slider-single-placeholder' data-slide="2" title='Oil Product Slide'>
+          <img src='./images/homepage/oil-icon.svg' height='25' />
+        </button>
+        <button class='fold-slider-single-placeholder' data-slide="3" title='Cleaning Category Slide'>
+          <img src='./images/homepage/clean-icon.svg' height='25' />
+        </button>
+        <button class='fold-slider-single-placeholder' data-slide="4" title='Bathroom Category Slide'>
+          <img src='./images/homepage/bath-icon.svg' height='25' />
+        </button>
+      </nav>
+      <button id='fold-slider-nav-prev'>
+        <i class='bi bi-chevron-left'></i>
+      </button>
+      <button id='fold-slider-nav-next'>
+        <i class='bi bi-chevron-right'></i>
+      </button>
+    </section>
+
+    <section id='best-sellers' class='w-100 p-3 show-on-scroll text-center'>
+      <h3 class='text-left'>Best Sellers</h3>
+      <div class='products-carousel mb-5 position-relative'>
+        <div class='carousel-container'>
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100 add-to-cart" data-id="3">Add to cart</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+        </div>
+        <div class='carousel-movement d-flex justify-content-center'>
+          <button class='bg-transparent text-primary border-0 mx-1 prev-slide'>
+            <i class='bi bi-chevron-left'></i>
+          </button>
+
+          <span class='carousel-current'>1</span>
+          <span class='mx-2'>/</span>
+          <span class='carousel-limit'>5</span>
+
+          <button class='bg-transparent text-primary border-0 mx-1 next-slide'>
+            <i class='bi bi-chevron-right'></i>
+          </button>
+        </div>
+      </div>
+      <a href='pages/collection.html' class='mx-auto my-4 d-inline-block glass-btn'>VIEW ALL</a>
+    </section>
+
+    <section class='p-3 p-md-5 text-center bg-primary text-white bw-special-text-section show-on-scroll'>
+      <h3>
+        Our products are safe, minimal, and easy on the planet. They last when you need them, and biodegrade when you
+        don’t.
+      </h3>
+    </section>
+
+    <section class='p-3 show-on-scroll'>
+      <h3 class='mb-5'>Better goods for a better planet.</h3>
+
+      <div class='row taxonomy-grid justify-content-around gy-4'>
+        <div class='col-6 col-md-3'>
+          <a class='text-primary' href='pages/category.html?category=Kitchen'>
+            <div class='taxonomy-card-wrapper'>
+              <img src='images/homepage-grid-1.jpg' alt='Kitchen' />
+            </div>
+            Kitchen <i class='bi bi-arrow-right'></i>
+          </a>
+        </div>
+        <div class='col-6 col-md-3'>
+          <a class='text-primary' href='pages/category.html?category=Laundry'>
+            <div class='taxonomy-card-wrapper'>
+              <img src='images/homepage-grid-2.jpg' alt='Cleaning & Laundry' />
+            </div>
+            Cleaning & Laundry <i class='bi bi-arrow-right'></i>
+          </a>
+        </div>
+        <div class='col-6 col-md-3'>
+          <a class='text-primary' href='pages/category.html?category=Bathroom'>
+            <div class='taxonomy-card-wrapper'>
+              <img src='images/homepage-grid-3.jpg' alt='Bathroom' />
+            </div>
+            Bathroom <i class='bi bi-arrow-right'></i>
+          </a>
+        </div>
+        <div class='col-6 col-md-3'>
+          <a class='text-primary' href='pages/category.html?category=Bedroom'>
+            <div class='taxonomy-card-wrapper'>
+              <img src='images/homepage-grid-4.jpg' alt='Bedroom' />
+            </div>
+            Bedroom <i class='bi bi-arrow-right'></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class='bw-special-text-section bg-primary text-white p-3 p-md-5 show-on-scroll'>
+      <h3>Our packaging is backyard compostable, recyclable, and plastic-free. (That is, if we use any packaging at
+        all).</h3>
+    </section>
+
+    <section class='p-3 show-on-scroll text-center' id='laundry-category'>
+      <h3 class='text-left'>Laundry Products</h3>
+
+      <div class='products-carousel position-relative'>
+        <div class='carousel-container'>
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+
+          <div class="product-card h-100">
+            <img
+              src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
+              class="product-img" alt="product" />
+
+            <div class="product-body">
+              <h6 class="product-title">Box Laundry Detergent</h6>
+              <p class="product-brand">PACKAGE FREE</p>
+              <p class="product-price">$28.00 USD</p>
+            </div>
+
+            <button class="btn product-btn w-100">Choose options</button>
+          </div>
+        </div>
+        <div class='carousel-movement d-flex justify-content-center'>
+          <button class='bg-transparent text-primary border-0 mx-1 prev-slide'>
+            <i class='bi bi-chevron-left'></i>
+          </button>
+
+          <span class='carousel-current'>1</span>
+          <span class='mx-2'>/</span>
+          <span class='carousel-limit'>5</span>
+
+          <button class='bg-transparent text-primary border-0 mx-1 next-slide'>
+            <i class='bi bi-chevron-right'></i>
+          </button>
+        </div>
       </div>
 
-      <a href = 'index.html'><img src = 'images/logo.svg' width = '180' alt = "Website's Logo" /></a>
 
-      <ul class = 'd-flex p-0 m-0 list-unstyled' id = 'icon-list'>
-        <li class = 'mx-2'>
-          <button id = 'open-search-panel' class = 'bg-transparent border-0 text-primary'>
-            <i class = 'bi bi-search'></i>
-          </button>
-        </li>
-        <li class = 'mx-2'>
-          <a href = 'pages/auth.html' class = 'd-none d-md-block button bg-transparent border-0 text-primary'>
-            <i class = 'bi bi-person' style = 'font-size:23px'></i>
+      <a href='pages/category.html?category=Laundry' class='glass-btn'>VIEW ALL</a>
+    </section>
+
+    <section class='d-flex justify-content-around align-items-center p-3 p-md-5 show-on-scroll row'>
+
+      <div class='card bg-secondary text-primary col-11 col-md-5 my-2 p-0'>
+        <img src='images/homepage-1.jpeg' class='card-img-top' />
+        <div class='card-body d-flex flex-column align-items-center justify-content-center'>
+          <span>SUBSCRIBE AND SAVE</span>
+          <b class='card-title my-3'>
+            Create a Habit
+          </b>
+          <a href='pages/about-us.html' class='text-primary'>
+            About Us <i class='bi bi-arrow-right'></i>
           </a>
-        </li>
-        <li class = 'mx-2'>
-          <button id = 'open-cart-panel' data-count = "2" class = 'bg-transparent border-0 text-primary'>
-            <i class = 'bi bi-bag'></i>
-          </button>
-        </li>
-      </ul>
-
-      <section id = 'search-panel' class = 'w-100'>
-        <header class = 'w-100 bg-secondary p-4 d-flex justify-content-between align-items-center'>
-          <div class = 'labeled-input w-100'>
-            <input placeholder = "hello" type = 'search' id = 'search' class = 'w-100 position-relative' title = "Search"/>
-            <label for = 'search'>Search</label>
-            <button class = 'bg-transparent border-top-0 border-right-0 border-bottom-0 border-color-primary px-3'>
-              <i class = 'bi bi-search'></i>
-            </button>
-          </div>
-          <button id = 'close-search-panel' class = 'bg-transparent border-0' style = 'font-size:25px'>
-            <i class = 'bi bi-x'></i>
-          </button>
-        </header>
-        <ul id = 'search-results'>
-
-        </ul>
-      </section>
-
-      <section id = 'cart-panel' class = 'p-2'>
-
-        <header class = 'd-flex justify-content-between align-items-center'>
-          <h2 style = 'font-size:20px'>Your Cart</h2>
-          <button id = 'close-cart-panel' class = 'bg-transparent border-0' style = 'font-size:22px'>
-            <i class = 'bi bi-x'></i>
-          </button>
-        </header>
-
-        <section id = 'empty-cart' class = 'd-flex flex-column justify-content-center align-items-center p-3'>
-          <strong>Your cart is empty</strong>
-          <button class = 'darkGreen-btn p-2 mt-2'>Continue shopping</button>
-        </section>
-
-        <table class = 'w-100' id = 'cart-products-table'>
-          <thead>
-            <tr>
-              <th class = 'text-left'><small class = 'text-primary'>PRODUCT</small></th>
-              <th class = 'text-right'><small class = 'text-primary'>TOTAL</small></th>
-            </tr>
-          </thead>
-          <tbody id = 'cart-products'>
-          </tbody>
-        </table>
-
-        <!-- You Might Also Like ( Product Card Is Required ) -->
-
-        <footer id = 'cart-totals'>
-          <div class = 'd-flex align-items-center justify-content-between'>
-            <b>Estimated total</b>
-            <span>$xx.xx USD</span>
-          </div>
-          <small class = 'text-gray' style = 'font-size:11px'>Taxes, discounts and shipping calculated at checkout</small>
-          <a href = '#checkout' class = 'p-2 m-auto d-block text-center darkGreen-btn'>Checkout</a>
-        </footer>
-
-        <div class = 'layout'></div>
-      </section>
-    </header>
-
-    <main>
-      
-      <section id = 'fold'>
-        <h2 class = 'display-4'>A clean you can trust.</h2>
-        <p>Clean, simple, and EWG Verified®.</p>
-
-        <button class = 'glass-btn'>Start Fresh</button>
-      </section>
-
-      <section id = 'best-sellers' class = 'w-100 p-3 show-on-scroll text-center'>
-        <h3 class = 'text-left'>Best Sellers</h3>
-        <div class = 'products-carousel mb-5 position-relative overflow-hidden'>
-          <div class = 'carousel-container'>
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-          </div>
-          <div class = 'carousel-movement d-flex justify-content-center'>
-            <button class = 'bg-transparent text-primary border-0 mx-1 prev-slide'>
-              <i class = 'bi bi-chevron-left'></i>
-            </button>
-
-            <span class = 'carousel-current'>1</span>
-            <span class = 'mx-2'>/</span>
-            <span class = 'carousel-limit'>5</span>
-
-            <button class = 'bg-transparent text-primary border-0 mx-1 next-slide'>
-              <i class = 'bi bi-chevron-right'></i>
-            </button>
-          </div>
         </div>
-        <a href = '#' class = 'mx-auto my-4 d-inline-block glass-btn'>VIEW ALL</a>
-      </section>
+      </div>
 
-      <section class = 'p-5 text-center bg-primary text-white bw-special-text-section show-on-scroll'>
-        <h3>
-          Our products are safe, minimal, and easy on the planet. They last when you need them, and biodegrade when you don’t.
-        </h3>
-      </section>
-
-      <section class = 'p-3 show-on-scroll'>
-        <h3 class = 'mb-5'>Better goods for a better planet.</h3>
-      
-        <div class = 'row taxonomy-grid justify-content-around'>
-          <div class = 'col-4 col-md-2'>
-            <img src = 'images/homepage-grid-1.jpg' />
-            <a class = 'text-primary' href = '#'>Kitchen & Food Storage <i class = 'bi bi-arrow-right'></i></a>
-          </div>
-          <div class = 'col-4 col-md-2'>
-            <img src = 'images/homepage-grid-2.jpg' />
-            <a class = 'text-primary' href = '#'>Cleaning & Laundry <i class = 'bi bi-arrow-right'></i></a>
-          </div>
-          <div class = 'col-4 col-md-2'>
-            <img src = 'images/homepage-grid-3.jpg' />
-            <a class = 'text-primary' href = '#'>Sustainable Food Storage <i class = 'bi bi-arrow-right'></i></a>
-          </div>
-          <div class = 'col-4 col-md-2'>
-            <img src = 'images/homepage-grid-4.jpg' />
-            <a class = 'text-primary' href = '#'>Body & Skincare <i class = 'bi bi-arrow-right'></i></a>
-          </div>
-          <div class = 'col-4 col-md-2'>
-            <img src = 'images/homepage-grid-5.jpg' />
-            <a class = 'text-primary' href = '#'>On the Go <i class = 'bi bi-arrow-right'></i></a>
-          </div>
-        </div>
-      </section>
-
-      <section class = 'bw-special-text-section bg-primary text-white p-5 show-on-scroll'>
-        <h3>Our packaging is backyard compostable, recyclable, and plastic-free. (That is, if we use any packaging at all).</h3>
-      </section>
-
-      <section class = 'p-3 show-on-scroll text-center'>
-        <h3 class = 'text-left'>Zero Waste Kits</h3>
-
-        <div class = 'products-carousel position-relative'>
-          <div class = 'carousel-container'>
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-
-            <div class="product-card h-100">
-              <img
-                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F45245%2F45245_1.png"
-                class="product-img"
-                alt="product"
-              />
-
-              <div class="product-body">
-                <h6 class="product-title">Box Laundry Detergent</h6>
-                <p class="product-brand">PACKAGE FREE</p>
-                <p class="product-price">$28.00 USD</p>
-              </div>
-
-              <button class="btn product-btn w-100">Choose options</button>
-            </div>
-          </div>
-          <div class = 'carousel-movement d-flex justify-content-center'>
-            <button class = 'bg-transparent text-primary border-0 mx-1 prev-slide'>
-              <i class = 'bi bi-chevron-left'></i>
-            </button>
-
-            <span class = 'carousel-current'>1</span>
-            <span class = 'mx-2'>/</span>
-            <span class = 'carousel-limit'>5</span>
-
-            <button class = 'bg-transparent text-primary border-0 mx-1 next-slide'>
-              <i class = 'bi bi-chevron-right'></i>
-            </button>
-          </div>
-        </div>
-
-
-        <a href = '#' class = 'glass-btn'>VIEW ALL</a>
-      </section>
-
-      <section class = 'd-flex justify-content-around align-items-center p-5 show-on-scroll row'>
-
-        <div class = 'card bg-secondary text-primary col-9 col-md-5 my-2 p-0'>
-          <img src = 'images/homepage-1.jpeg' class = 'card-img-top' />
-          <div class = 'card-body d-flex flex-column align-items-center justify-content-center'>
-            <span>SUBSCRIBE AND SAVE</span>
-            <b class = 'card-title my-3'>
-              Create a Habit
-            </b>
-            <a href = '#' class = 'text-primary'>
-              SUBSCRIBE NOW <i class = 'bi bi-arrow-right'></i>
-            </a>
-          </div>
-        </div>
-
-        <div class = 'card bg-secondary text-primary col-9 col-md-5 my-2 p-0'>
-          <img src = 'images/homepage-2.jpeg' class = 'card-img-top' />
-          <div class = 'card-body d-flex flex-column align-items-center justify-content-center'>
-            <span>GET STARTED</span>
-            <b class = 'card-title my-3'>
-              Only at Package Free
-            </b>
-            <a href = '#' class = 'text-primary'>
-              SHOP NOW <i class = 'bi bi-arrow-right'></i>
-            </a>
-          </div>
-        </div>
-
-      </section>
-
-      <section class = 'p-5 text-center text-white bw-special-text-section show-on-scroll' style = 'background:#613526'>
-        <h3 class = 'display-5'>
-           Get inspired to live your <a href = '#'>@PackageFreeShop</a> life
-          </h3>
-          <p>
-            Share with us how you're using your Package Free purchases to reduce your waste by tagging us <a href = '#'>@packagefreeshop</a> on Instagram!</p>
-      </section>
-
-    </main>
-
-    <footer class = 'bg-primary px-3 py-5'>
-      <nav class = 'd-block d-md-flex justify-content-center align-items-center'>
-        <a href = '#about-us' class = 'd-block d-md-inline mx-2 py-2 text-white'>About Us</a>
-        <a href = '#contact' class = 'mx-2 d-block d-md-inline py-2 text-white'>Contact Us</a>
-        <a href = '#shop-all' class = 'mx-2 d-block d-md-inline py-2 text-white'>Shop All</a>
-      </nav>
-      <ul class = 'd-flex justify-content-center align-items-center px-0 py-5 list-unstyled'>
-        <li>
-          <a href = '#facebook' class = 'mx-2'>
-            <i class = 'bi bi-facebook text-white'></i>
+      <div class='card bg-secondary text-primary col-11 col-md-5 my-2 p-0'>
+        <img src='images/homepage-2.jpeg' class='card-img-top' />
+        <div class='card-body d-flex flex-column align-items-center justify-content-center'>
+          <span>GET STARTED</span>
+          <b class='card-title my-3'>
+            Only at Package Free
+          </b>
+          <a href='pages/collection.html' class='text-primary'>
+            SHOP NOW <i class='bi bi-arrow-right'></i>
           </a>
-          <a href = '#instagram' class = 'mx-2'>
-            <i class = 'bi bi-instagram text-white'></i>
-          </a>
-          <a href = '#tiktok' class = 'mx-2'>
-            <i class = 'bi bi-tiktok text-white'></i>
-          </a>
-          <a href = '#pinterest' class = 'mx-2'>
-            <i class = 'bi bi-pinterest text-white'></i>
-          </a>
-      </ul>
-      <hr style = 'border-color:#FFF2;'/>
+        </div>
+      </div>
 
-      <ul class = 'd-flex list-unstyled px-0 justify-content-center align-items-center dot-separated-menu'>
-        <li class = 'text-white'>
-          &copy;
-          2026, Package Free
-        </li>
-        <li>
-          <a href = '#privacy-policy' class = 'text-white mx-2'>Privacy Policy</a>
-        </li>
-        <li>
-          <a href = '#terms' class = 'text-white mx-2'>Terms Of Use</a>
-        </li>
-      </ul>
-    </footer>
-  <script src = "scripts/main.js"></script>
-  <script src = 'scripts/homepage.js'></script>
-  </body>
+    </section>
+
+    <section class='p-3 p-md-5 text-center text-white bw-special-text-section show-on-scroll'
+      style='background:#613526'>
+      <h3 class='display-5'>
+        Get inspired to live your <a href='#'>@PackageFreeShop</a> life
+      </h3>
+      <p>
+        Share with us how you're using your Package Free purchases to reduce your waste by tagging us <a
+          href='#'>@packagefreeshop</a> on Instagram!</p>
+    </section>
+
+  </main>
+
+  <footer class='bg-primary px-3 py-5'>
+    <nav class='d-block d-md-flex justify-content-center align-items-center'>
+      <a href='pages/about-us.html' class='d-block d-md-inline mx-2 py-2 text-white'>About Us</a>
+      <a href='pages/contact-us.html' class='mx-2 d-block d-md-inline py-2 text-white'>Contact Us</a>
+      <a href='pages/collection.html' class='mx-2 d-block d-md-inline py-2 text-white'>Shop All</a>
+    </nav>
+    <ul class='d-flex justify-content-center align-items-center px-0 py-5 list-unstyled'>
+      <li>
+        <a href='#facebook' class='mx-2'>
+          <i class='bi bi-facebook text-white'></i>
+        </a>
+        <a href='#instagram' class='mx-2'>
+          <i class='bi bi-instagram text-white'></i>
+        </a>
+        <a href='#tiktok' class='mx-2'>
+          <i class='bi bi-tiktok text-white'></i>
+        </a>
+        <a href='#pinterest' class='mx-2'>
+          <i class='bi bi-pinterest text-white'></i>
+        </a>
+    </ul>
+    <hr style='border-color:#FFF2;' />
+
+    <ul class='d-flex list-unstyled px-0 justify-content-center align-items-center dot-separated-menu'>
+      <li class='text-white'>
+        &copy;
+        2026, Package Free
+      </li>
+      <li>
+        <a href='#privacy-policy' class='text-white mx-2'>Privacy Policy</a>
+      </li>
+      <li>
+        <a href='#terms' class='text-white mx-2'>Terms Of Use</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="scripts/config.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src='scripts/homepage.js'></script>
+  <script src="scripts/wishlist.js"></script>
+</body>
+
 </html>
