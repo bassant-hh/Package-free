@@ -6,4 +6,4 @@ const API_BASE_URL =
     window.API_BASE_URL ||
     (IS_LOCAL
         ? 'http://localhost:8000'
-        : 'https://package-free-8a97.vercel.app/');
+        : 'https://package-free-8a97.vercel.app');
