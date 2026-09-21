@@ -365,6 +365,7 @@ html,body {
 
 .parent-element {
   position: relative;
+  z-index: 100;
 
   list-style:none;
 
@@ -611,6 +612,10 @@ html,body {
 
   #main-menu ul.child-menu.active {
     left:0 !important;
+  }
+
+  #icon-list #wishlist-cont {
+    padding: 0;
   }
 }
 
