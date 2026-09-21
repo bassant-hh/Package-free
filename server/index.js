@@ -107,6 +107,10 @@ server.get('/:productId',(req,res) => {
 	}
 });
 
-server.listen(8000,() => {
-  console.log('Server running on http://localhost:8000');
-});
+if (require.main === module) {
+  server.listen(8000, () => {
+    console.log('Server running on http://localhost:8000');
+  });
+}
+
+module.exports = server;
