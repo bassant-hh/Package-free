@@ -616,6 +616,14 @@ html,body {
 
   #icon-list #wishlist-cont {
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #above-header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
   }
 }
 
